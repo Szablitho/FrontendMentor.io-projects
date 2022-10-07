@@ -30,8 +30,9 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
-
+PC view:
 ![My solution for PC screen](./images/my_solution.jpg)
+Mobile view:
 ![and for mobile screens](./images/my_solution_mobile.jpg)
 
 
@@ -54,9 +55,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+For first time I've used picture tag.
 
 ```html
 <picture>
@@ -65,6 +64,7 @@ To see how you can add code snippets, see below:
       <img src="images/image-product-desktop.jpg" alt="Gabrielle Essence Parfume" class="prod_pic card-img-top img-fluid">
     </picture>
 ```
+For this project, i had to use this for styling img in bigger screens.
 ```css
 @media only screen and (min-width:992px) {
       .prod_pic {
@@ -75,6 +75,7 @@ To see how you can add code snippets, see below:
       }
     }
 ```
+Here is how use of Bootstrap looks from my hands. I'm proud of it.
 ```html / Bootstrap
   <div class="card d-lg-flex flex-lg-row col-sm-12 col-lg-8 col-xl-8 col-xxl-6 bg-white mt-3 mb-5 me-3 ms-3 rounded-3 height">
   <!-- card head -->
@@ -103,8 +104,9 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 Making image fit isn't comfortable to me. I always try all the CSS properties to get my goal.
-I still don't get sizing through bootstrap classes in cases where 2 children elements has to be equal. In Bootstrap maximum width is 12 units ```html
-  <div class="col-12" </div>  
+I still don't get sizing through bootstrap classes in cases where 2 children elements has to be equal. In Bootstrap maximum width is 12 units
+```html
+  <div class="col-12"> </div>  
 ```
 When i match 2 children to have 6 unit per each, they are not equal. 
 Besides that, i need practise with making responsive layouts, hidden/appearing on click navigation bars, learning specifity.
