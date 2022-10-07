@@ -31,7 +31,7 @@
       background: hsl(30, 38%, 92%);
     }
     
-    /* @media only screen and (min-width:1024px) {
+    /*  {
       .box {
         min-height: 100vh !important;
       }  
@@ -55,13 +55,9 @@
         max-height: 37vh!important;
       }
     } */
-.box {
-  min-height: 100vh;
-}
-    
-    /* .card {
-      max-height: 1020px !important;
-    } */
+    .box {
+      min-height: 100vh;
+    }
     p {
       font-size: 14px;
     }
@@ -73,9 +69,6 @@
     .product-name {
       letter-spacing: 4px;
       font-size: 14px;
-    }
-    .container {
-      max-width: 767px;
     }
     .addToCart {
       background-color: hsl(158, 36%, 37%);
@@ -94,6 +87,14 @@
       background-color: hsl(158, 34%, 20%) !important;
       color: white !important; 
     }
+    @media only screen and (min-width:992px) {
+      .prod_pic {
+        border-top-left-radius: 2% !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 2% !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -109,12 +110,23 @@
   $169.99
 
   Add to Cart -->
+
+<!-- TO DO
+  Fix img width, it has to will its entire parent. Then continue styling elements down of it.
+-->
 <div class="box d-flex justify-content-center align-items-center">
   <div class="card d-lg-flex flex-lg-row col-sm-12 col-lg-8 col-xl-8 col-xxl-6 bg-white mt-3 mb-5 me-3 ms-3 rounded-3 height">
     <div class="flex-grow-1">
       <!-- flex-grow-1 makes on both children of flexbox equal to each other -> grow in 1:1 ratio-->
-      <img alt="Gabrielle Essence Perfume" class="card-img-top rounded-top d-lg-none img-fluid" src="images\image-product-mobile.jpg">
-      <img alt="Gabrielle Essence Perfume" class="card-img d-none d-lg-inline rounded-start img-fluid" src="images\image-product-desktop.jpg">
+      <!-- col-lg-5 col-xl-4 col-xxl-1 -->
+      <!-- these were applied but without them its all fitting perfectly in 1:1 ratio -->
+      <!-- <img alt="Gabrielle Essence Perfume" class="card-img-top rounded-top d-lg-none img-fluid" src="images\image-product-mobile.jpg">
+      <img alt="Gabrielle Essence Perfume" class="card-img d-none d-lg-inline rounded-start img-fluid" src="images\image-product-desktop.jpg"> -->
+    <picture>
+      <source media="(max-width:991.9px)" srcset="images/image-product-mobile.jpg">
+      <!-- classes applied here are designed for picture in mobile resolution, styling for PC is above in @media query -->
+      <img src="images/image-product-desktop.jpg" alt="Gabrielle Essence Parfume" class="prod_pic card-img-top img-fluid">
+    </picture>
     </div>
     <div class="col-lg-5 col-xl-4 col-xxl-5 align-self-center mt-3 me-3 ms-3 pb-4 flex-grow-1">
       <p class="product-name mt-4 lead text text-muted">PERFUME</p>
