@@ -129,5 +129,5 @@ I also would like to start making dynamic pages with few JS functions.
 
 ## Acknowledgments
 
-Thank you for feedback [Lucas](https://www.frontendmentor.io/profile/correlucas) for showing me <picture> tag for making multiple image switcher, because my CSS could be confusing for some engines, like you said.
+Thank you for feedback [Lucas](https://www.frontendmentor.io/profile/correlucas) for showing me picture tag for making multiple image switcher, because my CSS could be confusing for some engines, like you said.
 
