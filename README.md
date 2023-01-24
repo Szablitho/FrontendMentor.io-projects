@@ -41,7 +41,7 @@ Mobile view:
 ### Links
 
 - Solution URL: [FrontEnd Mentor Solution](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/responsive-product-card-preview-t-cDngkKSX)
-- Live Site URL: [GitHub Pages](https://szablitho.github.io/FrontendMentor.io-projects/)
+- Live Site URL: [GitHub Pages](https://github.com/Szablitho/product-preview-card/)
 
 ## My process
 
